@@ -1,0 +1,14 @@
+URxvt.intensityStyles: false
+URxvt.font: xft:SourceCodePro:medium:pixelsize=9
+URxvt.letterSpace: -1
+!#URxvt.perl-ext-common: default,matcher
+!#URxvt.url-launcher: /usr/bin/firefox
+!#URxvt.matcher.button: 1
+!#URxvt.keysym.C-Delete: perl:matcher:last
+!#URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+#include ".Xresources.d/Xresources.dark"
+

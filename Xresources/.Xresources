@@ -1,5 +1,6 @@
+URxvt.termName= xterm-256color
 URxvt.intensityStyles: false
-URxvt.font: xft:SourceCodePro:medium:pixelsize=9
+URxvt.font: xft:SourceCodePro:medium:pixelsize=12
 URxvt.letterSpace: -1
 !#URxvt.perl-ext-common: default,matcher
 !#URxvt.url-launcher: /usr/bin/firefox

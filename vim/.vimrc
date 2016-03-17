@@ -63,8 +63,9 @@ filetype plugin indent on    " required
 
 "colorscheme darkblue
 "colorscheme solarized
-colorscheme zenburn
+"colorscheme zenburn
 "colorscheme default
+colorscheme 256_noir
 let mapleader = " "
 
 map <F3> :bp<CR> 

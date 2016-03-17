@@ -39,7 +39,24 @@ precmd() {
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' formats "%b"
 
+# python virtualenv
+# inspired by http://github.com/tonyseek/oh-my-zsh-virtualenv-prompt
+# not prompt fiddling by virtualenvwrapper itself
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+virtualenv_prompt_info() {
+    if [ -n "$VIRTUAL_ENV" ]; then
+        if [ -f "$VIRTUAL_ENV" ]; then
+            local name=`cat $VIRTUAL_ENV/__name__`
+        elif [ `basename $VIRTUAL_ENV` = "__" ]; then
+            local name=$(basename $(dirname $VIRTUAL_ENV))
+        else
+            local name=$(basename $VIRTUAL_ENV)
+        fi
+        echo "[$name]"
+    fi
+}
+
 # set default prompt
-PROMPT="%F{green}|- %B%n@%m: %~%b %F{green}-
+PROMPT="%F{green}|- %B%n@%m: %~%b %F{green}---- %f%F{yellow}$(virtualenv_prompt_info)%f%F{green} ----
 |->%f "
 RPROMPT='%{$fg[blue]%}${vcs_info_msg_0_}%{$reset_color%}'

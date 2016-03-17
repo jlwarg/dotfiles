@@ -35,8 +35,9 @@ precmd() {
 }
 # we use only git here
 zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' formats "%b"
 
 # set default prompt
-PROMPT="%F{green}- %B%n@%m: %~%b %F{green}-
-->%f "
+PROMPT="%F{green}|- %B%n@%m: %~%b %F{green}-
+|->%f "
 RPROMPT='%{$fg[blue]%}${vcs_info_msg_0_}%{$reset_color%}'

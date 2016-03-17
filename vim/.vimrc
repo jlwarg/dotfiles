@@ -28,9 +28,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
-" Powerline
-" disabled due to system wide powerline installation
-"Plugin 'powerline/powerline'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 " NerdCommenter

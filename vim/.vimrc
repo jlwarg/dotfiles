@@ -29,7 +29,7 @@ Plugin 'gmarik/Vundle.vim'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 " fuzzy file finder, will probably replace Nerdtree in the long run
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 " NerdCommenter

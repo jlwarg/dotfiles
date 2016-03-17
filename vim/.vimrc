@@ -28,8 +28,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
-" Taglist
-Plugin 'vim-scripts/taglist.vim'
 " Powerline
 " disabled due to system wide powerline installation
 "Plugin 'powerline/powerline'

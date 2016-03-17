@@ -59,10 +59,6 @@ Plugin 'tpope/vim-surround'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"colorscheme darkblue
-"colorscheme solarized
-"colorscheme zenburn
-"colorscheme default
 colorscheme 256_noir
 let mapleader = " "
 

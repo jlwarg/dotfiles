@@ -26,6 +26,8 @@ bindkey "${terminfo[kend]}" end-of-line
 autoload -U compinit colors vcs_info
 # autocompletion
 compinit
+# arrow-key driven autocomplete
+zstyle ':completion:*' menu select
 # colors
 colors
 

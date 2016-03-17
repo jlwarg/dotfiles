@@ -41,7 +41,7 @@ zstyle ':vcs_info:*' formats "%b"
 
 # python virtualenv
 # inspired by http://github.com/tonyseek/oh-my-zsh-virtualenv-prompt
-# not prompt fiddling by virtualenvwrapper itself
+# no prompt fiddling by virtualenvwrapper itself
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 virtualenv_prompt_info() {
     if [ -n "$VIRTUAL_ENV" ]; then
